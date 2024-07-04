@@ -29,7 +29,7 @@ export function AboutVivek() {
     <React.Fragment>
       <h1>Vivek Chotalia Founder and Managing Partner</h1>
       <div className="about-vivek">
-        <div>
+        <div className="intro-text">
           <p>
             A dynamic and forward-looking young leader focused on transforming
             non-core business activities within enterprises. Grounded in the

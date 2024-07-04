@@ -161,7 +161,7 @@ ul.exp-list {
   display: flex;
 }
 
-.session + .session{
+.session + .session {
   margin-left: 1.5em;
 }
 
@@ -251,8 +251,6 @@ footer.container {
 
 /* Card */
 
-
-
 .experiences .card {
   height: 7rem;
   background-color: #5dabaa;
@@ -273,17 +271,31 @@ footer.container {
 }
 .about-vivek p {
   text-align: left;
-
 }
-.core-values{
+.core-values {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
-.sustainable-growth{
+.sustainable-growth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+/* Footer */
+footer nav a,
+footer p {
+  font-size: 1rem;
+}
+/* Footer */
+
+.bm-burger-button,
+.mobile-header-container {
+  display: none;
+}
+.desktop-header {
+  display: flex;
+}
+
 /* media queries */
 
 /* Mobile devices – 320px — 480px. */
@@ -298,7 +310,7 @@ footer.container {
 /* iPads, Tablets – 481px — 768px. */
 @media (min-width: 481px) and (max-width: 768px) {
   .container {
-    max-width: 390px;
+    max-width: 461px;
     width: 100%;
     margin: 0 auto;
   }
@@ -307,12 +319,89 @@ footer.container {
   }
 }
 
+/* common style for all devices */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.35rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .mobile-header-container h1 {
+    color: white;
+  }
+  .about-vivek p {
+    text-align: justify !important;
+  }
+  .img-feat {
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+  .about-vivek,
+  .core-values,
+  .sustainable-growth {
+    display: table;
+  }
+
+  .about-vivek .intro-text {
+    display: table-footer-group;
+  }
+  .bm-burger-button,
+  .mobile-header-container {
+    display: block;
+  }
+  .desktop-header {
+    display: none;
+  }
+}
+
 /* Small screens, laptops – 769px — 1024px. */
 @media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.35rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .mobile-header-container h1 {
+    color: white;
+  }
   .container {
     max-width: 750px;
     width: 100%;
     margin: 0 auto;
+  }
+  .desktop-header {
+    display: none;
+  }
+  .bm-burger-button,
+  .mobile-header-container {
+    display: block;
+  }
+  .mobile-header-container h1 {
+    color: white;
+  }
+  .img-feat {
+    margin-bottom: 0;
+    margin-top: 1em;
   }
 }
 
@@ -366,12 +455,6 @@ footer.container {
     top: 0;
     background-color: #fff;
   }
-  /* Footer */
-  footer nav a,
-  footer p {
-    font-size: 1rem;
-  }
-  /* Footer */
 }
 
 /* Extra large screens, TV – 1201px, and more. */
