@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import featImg from "../assets/img-main.jpg";
 import FirmName from "./FirmName";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container">
       <img
