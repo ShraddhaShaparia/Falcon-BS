@@ -12,7 +12,7 @@ export default function Home() {
       <img
         className="img-feat"
         src={featImg}
-        alt="Red30 Tech conference attendees on a laptop"
+        alt="FBS Tech conference attendees on a laptop"
       />
 
       <h1>

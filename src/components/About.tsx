@@ -1,5 +1,5 @@
 import vivek_dp from "../assets/vivek_dp.jpg";
-import React from "react";
+import React, { useEffect } from "react";
 import { SectorExp } from "./SectorExp";
 import { QualitySvg } from "../assets/svgs/QualitySvg";
 import { PeopleSvg } from "../assets/svgs/PeopleSvg";
@@ -7,6 +7,10 @@ import { TechnologySvg } from "../assets/svgs/TechnologySvg";
 import FirmName from "./FirmName";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container">
       {/* About Vivek */}
@@ -52,10 +56,10 @@ export function AboutVivek() {
             estate.
           </p>
           <p>
-            In 2024, he founded <FirmName/>, driving the firm with a
-            focus on core values and expanding into outsourcing services for
-            accounting advisory in IFRS/US GAAP reporting, financial modeling,
-            XBRL, and more.
+            In 2024, he founded <FirmName />, driving the firm with a focus on
+            core values and expanding into outsourcing services for accounting
+            advisory in IFRS/US GAAP reporting, financial modeling, XBRL, and
+            more.
           </p>
         </div>
         <div>
@@ -111,11 +115,10 @@ export function SustainableGrowth() {
           <QualitySvg />
           <h2>Quality</h2>
           <p>
-            At <FirmName/>, we are committed to delivering
-            quality and value driven services and solutions. We follow rigorous
-            internal quality control processes and leave little to human error.
-            All our team members are continually trained for utmost quality
-            consciousness.
+            At <FirmName />, we are committed to delivering quality and value
+            driven services and solutions. We follow rigorous internal quality
+            control processes and leave little to human error. All our team
+            members are continually trained for utmost quality consciousness.
           </p>
         </div>
 

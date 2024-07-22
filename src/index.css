@@ -257,11 +257,11 @@ footer.container {
   color: white;
 }
 
-.card:hover {
-  box-shadow: 2px 8px 16px 0 #3a5c5b;
+.experiences .card:hover {
+  box-shadow: 2px 8px 16px 0 #cacaca;
 }
 
-.card-container {
+.experiences .card-container {
   padding: 2px 16px;
   display: flex;
 }
@@ -439,7 +439,7 @@ footer p {
 
   .experiences {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .categories {
@@ -455,6 +455,7 @@ footer p {
     position: sticky;
     top: 0;
     background-color: #fff;
+    z-index: 11;
   }
 }
 

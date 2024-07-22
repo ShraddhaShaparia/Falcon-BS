@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import Constants from "./common/Constants";
 import FirmName from "./FirmName";
 
 export const Careers = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container">
       <LifeAtVC />

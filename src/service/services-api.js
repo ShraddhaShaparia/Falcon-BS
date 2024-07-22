@@ -4,41 +4,21 @@ const categories = [
   {
     name: "Accounting and Book keeping",
     id: "accounting-and-book-keeping",
-    sessions: [
-      {
-        name: "3D Printing with Metal",
-        id: "3d-printing-metal",
-        desc: "See the latest in metal 3D printing technologies, from desktop machines (you need a really big desk!) to those designed for machine shops creating high-end and high-volume pieces.",
-        speaker: {
-          name: "Geoff Leffler",
-          title: "Fabrication Specialist",
-          org: "KinetEco Inc.",
-          bio: "Geoff Leffler has metal in his veins. Starting out in traditional steel and aluminum fabrication, he's become obsessed with new technologies that can create finished metal parts quickly and affordably.",
-        },
-      },
-      {
-        name: "Homebuilding and 3D Printing",
-        id: "homebuilding-and-3d-printing",
-        desc: "A new house in 24 hours—can this be our practical solution for making affordable housing for all? See what has been done in this very vertical industry, and discuss how it will grow and be truly affordable—both for those living in the homes, and for the builders that create them.",
-        speaker: {
-          name: "Griffin Snow",
-          title: "Urban Planner",
-          org: "KinetEco Inc.",
-          bio: "Griffin Snow has been driven to find ways to make efficient, affordable housing for all ever since he was a kid living on the streets with his single dad.",
-        },
-      },
-    ],
     icon: IconEnumeration.accounting,
     description:
       "Includes IFRS Compliant Accounting of transactions for your business",
+    imgSrc: "/images/ourServices/accounting and book keeping.jpg",
   },
   {
-    name: "Tax and regulatory support",
-    id: "tax-and-regulatory-support",
+    name: "Accounting Consulting",
+    id: "accounting-consulting",
     sessions: [],
-    icon: IconEnumeration.tax,
-    description: "Includes Tax return filing services for GTA and QFC",
+    icon: IconEnumeration.AccountingConsulting,
+    description:
+      "Includes advise on various complex accounting matters and discussion with your auditors to have mutually agreed conclusion",
+    imgSrc: "/images/ourServices/accounting consulting.jpg",
   },
+
   {
     name: "Financial Modelling and Management Reporting",
     id: "financial-modelling-and-management-reporting",
@@ -46,6 +26,8 @@ const categories = [
     icon: IconEnumeration.financialModelling,
     description:
       "Includes excel based and Power BI based insightful reports and insights",
+    imgSrc:
+      "/images/ourServices/financial modelling and management reporting.jpg",
   },
   {
     name: "Outsourcing",
@@ -54,7 +36,9 @@ const categories = [
     icon: IconEnumeration.outsourcing,
     description:
       "Includes various functions of your business outsourced from our offsite locations to obtain quality output at significantly reduced cost",
+    imgSrc: "/images/ourServices/outsourcing.jpg",
   },
+
   {
     name: "Financial Systems Implementation",
     id: "financial-systems-implementation",
@@ -62,6 +46,15 @@ const categories = [
     icon: IconEnumeration.financialSystems,
     description:
       "Includes identifying, shortlisting, implementing, transition and shadowing the new accounting system for your business",
+    imgSrc: "/images/ourServices/Financial system implementation.jpg",
+  },
+  {
+    name: "Tax and regulatory support",
+    id: "tax-and-regulatory-support",
+    sessions: [],
+    icon: IconEnumeration.tax,
+    description: "Includes Tax return filing services for GTA and QFC",
+    imgSrc: "/images/ourServices/tax and regulatory support.jpg",
   },
   {
     name: "HR services",
@@ -70,6 +63,7 @@ const categories = [
     icon: IconEnumeration.hr,
     description:
       "Includes talent acquisition, monthly payroll processing, training and HR recording keeping",
+    imgSrc: "/images/ourServices/HR services.png",
   },
 
   {
@@ -79,6 +73,7 @@ const categories = [
     icon: IconEnumeration.ifrs16,
     description:
       "Includes full model development as per IFRS 16 for your leases",
+    imgSrc: "/images/ourServices/IFRS Services.jpg",
   },
   {
     name: "IFRS Training",
@@ -86,21 +81,16 @@ const categories = [
     sessions: [],
     icon: IconEnumeration.IFRSTraining,
     description: "Includes training your employees on various IFRS standards",
-  },
-  {
-    name: "Accounting Consulting",
-    id: "accounting-consulting",
-    sessions: [],
-    icon: IconEnumeration.AccountingConsulting,
-    description:
-      "Includes advise on various complex accounting matters and discussion with your auditors to have mutually agreed conclusion",
+    imgSrc: "/images/ourServices/IFRS Training.jpg",
   },
   {
     name: "Customer Administration and Relationship Management",
     id: "customer-administration-and-relationship",
     sessions: [],
     icon: IconEnumeration.CustomerRelationship,
-    description: "Includes managing your customers and their queries and complaints",
+    description:
+      "Includes managing your customers and their queries and complaints",
+    imgSrc: "/images/ourServices/customer admin and relationship.jpg",
   },
   {
     name: "Financial Statements Preparation and Translation",
@@ -109,6 +99,8 @@ const categories = [
     icon: IconEnumeration.financialStatesments,
     description:
       "Includes IFRS financials, and managing your auditors to get audit done",
+    imgSrc:
+      "/images/ourServices/financial statements preparation and translation.jpg",
   },
   {
     name: "Data Mining",
@@ -117,13 +109,26 @@ const categories = [
     icon: IconEnumeration.DataMining,
     description:
       "Includes Cleansing, processing, analyzing, presenting meaning insights to make your business decision",
+    imgSrc: "/images/ourServices/data mining.jpg",
   },
   {
-    name: "And Many More..",
-    id: "many-more",
+    name: "Internal Audits & Process Audits",
+    id: "data-mining",
     sessions: [],
-    icon: IconEnumeration.More,
-    description: "Many more services..",
+    icon: IconEnumeration.DataMining,
+    description:
+      "Includes various process audits and presenting findings to the senior management",
+    imgSrc: "/images/ourServices/internal audit.jpg",
+  },
+  ,
+  {
+    name: "Stock Audits",
+    id: "data-mining",
+    sessions: [],
+    icon: IconEnumeration.DataMining,
+    description:
+      "Includes physical inspection of stock of branches, warehouses, consolidations and reporting",
+    imgSrc: "/images/ourServices/stock audit.jpg",
   },
 ];
 
@@ -138,5 +143,10 @@ export function getCategory(catId) {
 }
 
 export function getCategories() {
-  return categories.map(({ name, id, icon }) => ({ name, id, icon }));
+  return categories.map(({ name, id, imgSrc, description }) => ({
+    name,
+    id,
+    imgSrc,
+    description,
+  }));
 }
