@@ -418,7 +418,7 @@ footer p {
   footer,
   nav {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
 
   header.container {
