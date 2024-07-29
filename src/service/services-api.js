@@ -113,7 +113,7 @@ const categories = [
   },
   {
     name: "Internal Audits & Process Audits",
-    id: "data-mining",
+    id: "internal-audits-&-process-audits",
     sessions: [],
     icon: IconEnumeration.DataMining,
     description:
@@ -123,7 +123,7 @@ const categories = [
   ,
   {
     name: "Stock Audits",
-    id: "data-mining",
+    id: "stock-audits",
     sessions: [],
     icon: IconEnumeration.DataMining,
     description:

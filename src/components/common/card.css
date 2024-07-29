@@ -1,59 +1,60 @@
 .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
-    margin: 15px;
-    padding: 10px;
-    /* max-width: 400px; */
-    background-color: #fff;
-  }
-  
-  .card-header {
-    margin-bottom: 15px;
-  }
-  
-  .card-header h2 {
-    font-size: 20px;
-    margin: 0;
-  }
-  
-  .card-body p {
-    margin: 10px 0;
-    padding-right: 0rem;
-  }
-  
-  .card-body p strong {
-    margin-right: 5px;
-    font-weight: bold;
-  }
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  margin: 15px;
+  padding: 10px;
+  /* max-width: 400px; */
+  background-color: #fff;
+}
 
-  .split-card {
-    display: flex;    
-  }
-  .split-card p {
-    margin-left: 1rem;
-  }
-  .card-footer {
-    border-top: 1px solid #ccc;
-    margin-top: 1rem;
-  }
+.card-header {
+  margin-bottom: 15px;
+  background: transparent;
+}
 
-  .categories .card:hover {
-    cursor: pointer;
-  }
+.card-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
 
-  .card-footer {
-    display: none;
-  }
+.card-body p {
+  margin: 10px 0;
+  padding-right: 0rem;
+}
 
-  .categories .card-body:hover ~ .card-footer {
-    display: block;
-    transition: all .5s ease-in-out;
-  }
-  .card-footer {
-    transition: all .5s ease-in-out;
-  }
-  /* .card-desc {
+.card-body p strong {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.split-card {
+  display: flex;
+}
+.split-card p {
+  margin-left: 1rem;
+}
+.card-footer {
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+.categories .card:hover {
+  cursor: pointer;
+}
+
+.card-footer {
+  display: none;
+}
+
+.categories .card-body:hover ~ .card-footer {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.card-footer {
+  transition: all 0.5s ease-in-out;
+}
+/* .card-desc {
     display: none;
   }
 

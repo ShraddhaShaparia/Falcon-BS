@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./MobileHeader.css";
-import HeaderItems from "./HeaderItems";
 import { GoldenFalconSvg } from "../../assets/svgs/GoldenFalconSvg";
 
 const MobileHeader = () => {
   const [isOpen, setOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState("Home");
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      displaySelectedTabText("Home");
+    } else if (location.pathname === "/disclaimer") {
+      displaySelectedTabText("Disclaimer");
+    } else if (location.pathname === "/privacyPolicy") {
+      displaySelectedTabText("Privacy Policy");
+    }
+  }, [location]);
 
   const handleIsOpen = () => {
     setOpen(!isOpen);
@@ -27,7 +37,7 @@ const MobileHeader = () => {
         <h1 className="mobile-header-text">{selectedTab} </h1>
       </div>
       <Menu isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
-        <Link
+        <NavLink
           className="menu-item"
           to="/"
           onClick={() => {
@@ -36,8 +46,8 @@ const MobileHeader = () => {
           }}
         >
           Home
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="menu-item"
           to="/about"
           onClick={() => {
@@ -46,8 +56,8 @@ const MobileHeader = () => {
           }}
         >
           About US
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="menu-item"
           to="/services"
           onClick={() => {
@@ -56,8 +66,8 @@ const MobileHeader = () => {
           }}
         >
           Services
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="menu-item"
           to="/usefulLinks"
           onClick={() => {
@@ -66,8 +76,8 @@ const MobileHeader = () => {
           }}
         >
           Useful Links
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="menu-item"
           to="/contact"
           onClick={() => {
@@ -76,8 +86,8 @@ const MobileHeader = () => {
           }}
         >
           Contact US
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="menu-item"
           to="/careers"
           onClick={() => {
@@ -86,7 +96,7 @@ const MobileHeader = () => {
           }}
         >
           Careers
-        </Link>
+        </NavLink>
       </Menu>
     </div>
   );

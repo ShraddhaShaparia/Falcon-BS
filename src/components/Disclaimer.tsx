@@ -13,7 +13,7 @@ export const Disclaimer = () => {
         <FirmName /> is a Company operating in Qatar.
       </p>
       <p>
-        The www.vca.co.qa web pages have been carefully prepared, but it has
+        The www.falconbs.com web pages have been carefully prepared, but it has
         been written in general terms and should be seen as broad guidance only.
         The web pages cannot be relied upon to cover specific situations and you
         should not act, or refrain from acting, upon the information contained
@@ -33,7 +33,7 @@ export const Disclaimer = () => {
         should immediately terminate such usage.
       </p>
       <p>
-        By accessing this website, www.vca.co.qa, you acknowledge and confirm
+        By accessing this website, www.falconbs.com, you acknowledge and confirm
         that you are seeking information relating to <FirmName />, of your own
         accord and that there has been no form of solicitation, advertisement,
         or inducement by <FirmName />, or its members. The content of this
