@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./MobileHeader.css";
 import { GoldenFalconSvg } from "../../assets/svgs/GoldenFalconSvg";
 

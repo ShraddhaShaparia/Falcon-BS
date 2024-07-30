@@ -12,17 +12,14 @@ const categories = [
   {
     name: "Accounting Consulting",
     id: "accounting-consulting",
-    sessions: [],
     icon: IconEnumeration.AccountingConsulting,
     description:
       "Includes advise on various complex accounting matters and discussion with your auditors to have mutually agreed conclusion",
     imgSrc: "/images/ourServices/accounting consulting.jpg",
   },
-
   {
     name: "Financial Modelling and Management Reporting",
     id: "financial-modelling-and-management-reporting",
-    sessions: [],
     icon: IconEnumeration.financialModelling,
     description:
       "Includes excel based and Power BI based insightful reports and insights",
@@ -32,7 +29,6 @@ const categories = [
   {
     name: "Outsourcing",
     id: "outsourcing",
-    sessions: [],
     icon: IconEnumeration.outsourcing,
     description:
       "Includes various functions of your business outsourced from our offsite locations to obtain quality output at significantly reduced cost",
@@ -42,7 +38,6 @@ const categories = [
   {
     name: "Financial Systems Implementation",
     id: "financial-systems-implementation",
-    sessions: [],
     icon: IconEnumeration.financialSystems,
     description:
       "Includes identifying, shortlisting, implementing, transition and shadowing the new accounting system for your business",
@@ -51,7 +46,6 @@ const categories = [
   {
     name: "Tax and regulatory support",
     id: "tax-and-regulatory-support",
-    sessions: [],
     icon: IconEnumeration.tax,
     description: "Includes Tax return filing services for GTA and QFC",
     imgSrc: "/images/ourServices/tax and regulatory support.jpg",
@@ -59,7 +53,6 @@ const categories = [
   {
     name: "HR services",
     id: "payroll",
-    sessions: [],
     icon: IconEnumeration.hr,
     description:
       "Includes talent acquisition, monthly payroll processing, training and HR recording keeping",
@@ -69,7 +62,6 @@ const categories = [
   {
     name: "IFRS 16 Services",
     id: "ifrs-16-services",
-    sessions: [],
     icon: IconEnumeration.ifrs16,
     description:
       "Includes full model development as per IFRS 16 for your leases",
@@ -78,7 +70,6 @@ const categories = [
   {
     name: "IFRS Training",
     id: "ifrs-training",
-    sessions: [],
     icon: IconEnumeration.IFRSTraining,
     description: "Includes training your employees on various IFRS standards",
     imgSrc: "/images/ourServices/IFRS Training.jpg",
@@ -86,7 +77,6 @@ const categories = [
   {
     name: "Customer Administration and Relationship Management",
     id: "customer-administration-and-relationship",
-    sessions: [],
     icon: IconEnumeration.CustomerRelationship,
     description:
       "Includes managing your customers and their queries and complaints",
@@ -95,7 +85,6 @@ const categories = [
   {
     name: "Financial Statements Preparation and Translation",
     id: "financial-statements-preparation-and-translation",
-    sessions: [],
     icon: IconEnumeration.financialStatesments,
     description:
       "Includes IFRS financials, and managing your auditors to get audit done",
@@ -105,7 +94,6 @@ const categories = [
   {
     name: "Data Mining",
     id: "data-mining",
-    sessions: [],
     icon: IconEnumeration.DataMining,
     description:
       "Includes Cleansing, processing, analyzing, presenting meaning insights to make your business decision",
@@ -114,17 +102,15 @@ const categories = [
   {
     name: "Internal Audits & Process Audits",
     id: "internal-audits-&-process-audits",
-    sessions: [],
     icon: IconEnumeration.DataMining,
     description:
       "Includes various process audits and presenting findings to the senior management",
     imgSrc: "/images/ourServices/internal audit.jpg",
   },
-  ,
+
   {
     name: "Stock Audits",
     id: "stock-audits",
-    sessions: [],
     icon: IconEnumeration.DataMining,
     description:
       "Includes physical inspection of stock of branches, warehouses, consolidations and reporting",
